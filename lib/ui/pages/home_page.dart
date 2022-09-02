@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:iq_tests/data/constants/colors.dart';
 import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
+import 'package:iq_tests/ui/pages/tests_description_page.dart';
+import 'package:iq_tests/ui/widgets/custom_button.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
-
-  // double logoTextWidth = 180.0;
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,14 +30,14 @@ class HomePage extends StatelessWidget {
                       children: [
                         Text(
                           MyStrings.logoName1.toUpperCase(),
-                          style: MyStyles.ts_FS50_FWbold_CMain_LS7_FFPoiretOne,
+                          style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
                         ),
                         const SizedBox(
                           width: 20.0,
                         ),
                         const Text(
                           MyStrings.logoName2,
-                          style: MyStyles.ts_FS35_FWbold_CMain_LS20_FFPoiretOne,
+                          style: MyStyles.ts_FS35_FWbold_CText_LS20_FFPoiretOne,
                           textAlign: TextAlign.right,
                         ),
                       ],
@@ -51,27 +51,13 @@ class HomePage extends StatelessWidget {
                   children: const [
                     Text(
                       MyStrings.descriptionText,
-                      style: MyStyles.ts_FS18_FWbold_CText_LS1_FFPoiretOne,
+                      style: MyStyles.ts_FS20_FWbold_CText_LS1_FFPoiretOne,
                     ),
                   ],
                 ),
               ),
-              Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 15.0),
-                  width: double.infinity,
-                  height: 50.0,
-                  child: ElevatedButton(
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(MyColors.secondaryColor),
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25.0),
-                          ))),
-                      onPressed: () {},
-                      child: const Text(
-                        MyStrings.nextText,
-                        style: MyStyles.ts_FS22_FWbold_CWhite_LS1_FFPoiretOne,
-                      ))),
+              CustomButton(MyStrings.nextText, () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const TestsDescriptionPage()))),
             ],
           ),
         ),
