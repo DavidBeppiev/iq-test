@@ -5,8 +5,8 @@ class MyColors {
   static const textColor = Color(0xFF363636);
   static const secondaryColor = Color.fromRGBO(76, 238, 152, 1.0);
 
-  static const davysGreyColor =  Color.fromRGBO(86, 86, 86, 1.0);
+  static const davysGreyColor = Color.fromRGBO(86, 86, 86, 1.0);
 
-  // static const backgroundColor = Color(0xFFFFCF48);
-  // static const backgroundColor = Color(0xFFC49E3F);
+// static const backgroundColor = Color(0xFFFFCF48);
+// static const backgroundColor = Color(0xFFC49E3F);
 }

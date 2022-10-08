@@ -1,5 +1,4 @@
 class MyStrings {
-
   ///  = = = IinitialPageStrings = = =
   static const String logoName1 = 'Iq';
   static const String logoName2 = 'Tests';
@@ -13,9 +12,9 @@ class MyStrings {
 
   /// = = = TestsDescriptionPageScreens = = =
   static const String testTitle = 'Тест Ганса Айзенка';
-  static const String testDescriptionText1 = 'Перед вами — один из серии знаменитых IQ тестов, разработанных классиком современной психологии Гансом Айзенком с использованием словесного, цифрового и графического материала.';
+  static const String testDescriptionText1 =
+      'Перед вами — один из серии знаменитых IQ тестов, разработанных классиком современной психологии Гансом Айзенком с использованием словесного, цифрового и графического материала.';
   static const String testDescriptionText2 = '*Тест представляет из себя 40 вопросов, на которые '
       'необходимо ответить за 30 минут. ';
   static const String moveToTestText = 'Перейти к тесту';
-
 }

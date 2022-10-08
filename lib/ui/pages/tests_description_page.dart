@@ -10,8 +10,8 @@ class TestsDescriptionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SingleChildScrollView(
-          child: SafeArea(
-      child: Center(
+      child: SafeArea(
+        child: Center(
           child: Padding(
             padding: const EdgeInsets.only(top: 25.0, right: 20.0, left: 20.0),
             child: Column(
@@ -21,7 +21,9 @@ class TestsDescriptionPage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Expanded(child: IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Icons.arrow_back))),
+                        Expanded(
+                            child: IconButton(
+                                onPressed: () => Navigator.pop(context), icon: const Icon(Icons.arrow_back))),
                         const Expanded(
                           flex: 5,
                           child: Text(
@@ -48,15 +50,17 @@ class TestsDescriptionPage extends StatelessWidget {
                       MyStrings.testDescriptionText2,
                       style: MyStyles.ts_FS18_FWbold_CDavys_Grey_LS1_FFPoiretOne,
                     ),
-                    const SizedBox(height: 8.0,),
+                    const SizedBox(
+                      height: 8.0,
+                    ),
                     CustomButton(MyStrings.moveToTestText, () => null)
                   ],
                 ),
               ],
             ),
           ),
+        ),
       ),
-    ),
-        ));
+    ));
   }
 }

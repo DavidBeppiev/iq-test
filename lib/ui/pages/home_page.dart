@@ -56,8 +56,10 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              CustomButton(MyStrings.nextText, () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const TestsDescriptionPage()))),
+              CustomButton(
+                  MyStrings.nextText,
+                  () => Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => const TestsDescriptionPage()))),
             ],
           ),
         ),
