@@ -5,17 +5,440 @@
     "questions": [
       {
         "id": 0,
-        "question": "Question 1",
+        "question": "Выберите нужную фигуру из четырех пронумерованных",
         "explanation": {
-          "explanation_text": "Hear can be explanation text...",
-          "image_path": [
-            "or image/s path/es"
-          ]
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/1a.jpg"
         },
-        "answer_options": {
-          "answer_text": "I think the correct answer is 4",
-          "answer_image": 0
-        }
+        "answer": "4"
+      },
+      {
+        "id": 1,
+        "question": "Вставьте слово, которое служило бы окончанием первого слова и началом второго",
+        "explanation": {
+          "explanation_text": [
+            "ОБЫ (…) КА"
+          ],
+          "image_path": null
+        },
+        "answer": "чай"
+      },
+      {
+        "id": 2,
+        "question": "Решите анаграммы и исключите лишнее слово",
+        "explanation": {
+          "explanation_text": [
+            "ААЛТЕРК",
+            "КОЖАЛ",
+            "ДМОНЧЕА",
+            "ШКААЧ"
+          ],
+          "image_path": null
+        },
+        "answer": "ЧЕМОДАН"
+      },
+      {
+        "id": 3,
+        "question": "Вставьте недостающее число",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/4.png"
+        },
+        "answer": "11"
+      },
+      {
+        "id": 4,
+        "question": "Вставьте пропущенное слово",
+        "explanation": {
+          "explanation_text": [
+            "БАГОР (РОСА) ТЕСАК",
+            "ГАРАЖ (….) ТАБАК"
+          ],
+          "image_path": null
+        },
+        "answer": "жаба"
+      },
+      {
+        "id": 5,
+        "question": "Вставьте пропущенное число",
+        "explanation": {
+          "explanation_text": [
+            "196 (25) 324",
+            "325 ( ) 137"
+          ],
+          "image_path": null
+        },
+        "answer": "21"
+      },
+      {
+        "id": 6,
+        "question": "Продолжите ряд чисел",
+        "explanation": {
+          "explanation_text": [
+            "18 10 6 4 ?"
+          ],
+          "image_path": null
+        },
+        "answer": "3"
+      },
+      {
+        "id": 7,
+        "question": "Решите анаграммы и исключите лишнее слово",
+        "explanation": {
+          "explanation_text": [
+            "НИАВД",
+            "СЕОТТ",
+            "СЛОТ",
+            "ЛЕКСОР"
+          ],
+          "image_path": null
+        },
+        "answer": "тесто"
+      },
+      {
+        "id": 8,
+        "question": "Выберите нужную фигуру из пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/9.jpg"
+        },
+        "answer": "6"
+      },
+      {
+        "id": 9,
+        "question": "Выберите нужную фигуру из шести пронумерованных ",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/10.jpg"
+        },
+        "answer": "5"
+      },
+      {
+        "id": 10,
+        "question": "Вставьте недостающую букву",
+        "explanation": {
+          "explanation_text": [
+            "Щ Ц Т П Л ?"
+          ],
+          "image_path": null
+        },
+        "answer": "и"
+      },
+      {
+        "id": 11,
+        "question": "Вставьте слово, которое служило бы окончанием первого слова и началом второго",
+        "explanation": {
+          "explanation_text": [
+            "МЕ (…) ОЛАД"
+          ],
+          "image_path": null
+        },
+        "answer": "шок"
+      },
+      {
+        "id": 12,
+        "question": "Вставьте пропущенное число",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/13.gif"
+        },
+        "answer": "54"
+      },
+      {
+        "id": 13,
+        "question": "Вставьте недостающее число",
+        "explanation": {
+          "explanation_text": [
+            "4 9 20",
+            "8 5 14",
+            "10 3 ?"
+          ],
+          "image_path": null
+        },
+        "answer": "11"
+      },
+      {
+        "id": 14,
+        "question": "Вставьте недостающее число",
+        "explanation": {
+          "explanation_text": [
+            "16 (27) 43",
+            "29 ( ) 56"
+          ],
+          "image_path": null
+        },
+        "answer": "27"
+      },
+      {
+        "id": 15,
+        "question": "Вставьте недостающие буквы",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/16.gif"
+        },
+        "answer": "мн"
+      },
+      {
+        "id": 16,
+        "question": "Выберите нужную фигурку из пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/17.jpg"
+        },
+        "answer": "2"
+      },
+      {
+        "id": 17,
+        "question": "Выберите нужную фигуру из шести пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/18.jpg"
+        },
+        "answer": "2"
+      },
+      {
+        "id": 18,
+        "question": "Вставьте пропущенное число",
+        "explanation": {
+          "explanation_text": [
+            "6 11 ? 27"
+          ],
+          "image_path": null
+        },
+        "answer": "18"
+      },
+      {
+        "id": 19,
+        "question": "Вставьте пропущенное число",
+        "explanation": {
+          "explanation_text": [
+            "12 (56) 16",
+            "17 ( ) 21"
+          ],
+          "image_path": null
+        },
+        "answer": "76"
+      },
+      {
+        "id": 20,
+        "question": "Вставьте пропущенное слово",
+        "explanation": {
+          "explanation_text": [
+            "ФЛЯГА (АЛЬТ) ЖЕСТЬ",
+            "КОСЯК (….) МИРАЖ"
+          ],
+          "image_path": null
+        },
+        "answer": "кожа"
+      },
+      {
+        "id": 21,
+        "question": "Вставьте слово, которое служило бы окончанием первого слова и началом второго",
+        "explanation": {
+          "explanation_text": [
+            "ПРИК (…) ЬЯ"
+          ],
+          "image_path": null
+        },
+        "answer": "лад"
+      },
+      {
+        "id": 22,
+        "question": "Решите анаграммы и исключите лишнее слово",
+        "explanation": {
+          "explanation_text": [
+            "ЖААРБ",
+            "ТЯХА",
+            "НУССК",
+            "КОДАЛ"
+          ],
+          "image_path": null
+        },
+        "answer": "скунс"
+      },
+      {
+        "id": 23,
+        "question": "Вставьте слово, которое означало бы то же, что и слова, стоящие вне скобок",
+        "explanation": {
+          "explanation_text": [
+            "РУКА (…..) ГРОЗДЬ"
+          ],
+          "image_path": null
+        },
+        "answer": "кисть"
+      },
+      {
+        "id": 24,
+        "question": "Вставьте пропущенную букву",
+        "explanation": {
+          "explanation_text": [
+            "А Г Ж",
+            "Г З Л",
+            "З М ?"
+          ],
+          "image_path": null
+        },
+        "answer": "с"
+      },
+      {
+        "id": 25,
+        "question": "Вставьте пропущенные буквы",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/26.gif"
+        },
+        "answer": "ее"
+      },
+      {
+        "id": 26,
+        "question": "Выберите нужную фигуру из шести пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/27.jpg"
+        },
+        "answer": "2"
+      },
+      {
+        "id": 27,
+        "question": "Выберите нужную фигуру из пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/28.jpg"
+        },
+        "answer": "1"
+      },
+      {
+        "id": 28,
+        "question": "Вставьте нужную фигуру из шести пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/29.jpg"
+        },
+        "answer": "1"
+      },
+      {
+        "id": 29,
+        "question": "Вставьте пропущенное слово",
+        "explanation": {
+          "explanation_text": [
+            "КНИГА (АИСТ) САЛАТ",
+            "ПОРОГ (….) ОМЛЕТ"
+          ],
+          "image_path": null
+        },
+        "answer": "грот"
+      },
+      {
+        "id": 30,
+        "question": "Вставьте слово, которое означало бы то же, что и слова, стоящие вне скобок",
+        "explanation": {
+          "explanation_text": [
+            "КАРТОЧНАЯ ИГРА (….) СТЕРЖЕНЬ С РЕЗЬБОЙ"
+          ],
+          "image_path": null
+        },
+        "answer": "винт"
+      },
+      {
+        "id": 31,
+        "question": "Вставьте пропущенное число",
+        "explanation": {
+          "explanation_text": [
+            "1 8 27 ?"
+          ],
+          "image_path": null
+        },
+        "answer": "64"
+      },
+      {
+        "id": 32,
+        "question": "Вставьте пропущенное слово",
+        "explanation": {
+          "explanation_text": [
+            "ЛОТОК (КЛАД) ЛОДКА",
+            "ОЛИМП (….) КАТЕР"
+          ],
+          "image_path": null
+        },
+        "answer": "порт"
+      },
+      {
+        "id": 33,
+        "question": "Решите анаграммы и исключите лишнее слово",
+        "explanation": {
+          "explanation_text": [
+            "АТСЕН",
+            "ТИВОНКР",
+            "РАКЫШ",
+            "КООН"
+          ],
+          "image_path": null
+        },
+        "answer": "вторник"
+      },
+      {
+        "id": 34,
+        "question": "Вставьте пропущенную букву и пропущенное число",
+        "explanation": {
+          "explanation_text": [
+            "1 А",
+            "В 3",
+            "5 Д",
+            "? ?"
+          ],
+          "image_path": null
+        },
+        "answer": "ж7"
+      },
+      {
+        "id": 35,
+        "question": "Вставьте слово, которое означало бы то же, что и слова, стоящие вне скобок",
+        "explanation": {
+          "explanation_text": [
+            "ЗАЛИВ (….) ЧАСТЬ ЛИЦА"
+          ],
+          "image_path": null
+        },
+        "answer": "губа"
+      },
+      {
+        "id": 36,
+        "question": "Вставьте пропущенное слово",
+        "explanation": {
+          "explanation_text": [
+            "ПИРОГ (ПОЛЕ) СЛЕЗА",
+            "РЫНОК (….) ОСАДА"
+          ],
+          "image_path": null
+        },
+        "answer": "роса"
+      },
+      {
+        "id": 37,
+        "question": "Выберите нужную фигуру из шести пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/38.jpg"
+        },
+        "answer": "1"
+      },
+      {
+        "id": 38,
+        "question": "Выберите нужную фигурку из шести пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/39.jpg"
+        },
+        "answer": "6"
+      },
+      {
+        "id": 39,
+        "question": "Выберите нужную фигуру из четырех пронумерованных",
+        "explanation": {
+          "explanation_text": null,
+          "image_path": "https://sowy.ru/wp-content/uploads/2019/07/40.jpg"
+        },
+        "answer": "1"
       }
     ]
   }

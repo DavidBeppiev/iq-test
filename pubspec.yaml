@@ -27,6 +27,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/tests/
 
   fonts:
     - family: PoiretOne
