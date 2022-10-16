@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
+import 'package:iq_tests/ui/pages/test_page.dart';
 import 'package:iq_tests/ui/widgets/custom_button.dart';
 
 class TestsDescriptionPage extends StatelessWidget {
@@ -22,9 +23,8 @@ class TestsDescriptionPage extends StatelessWidget {
                         children: [
                           Expanded(
                               child: IconButton(
-                                  onPressed: () => Navigator.pop(context), icon: const Icon(Icons.arrow_back)
-                              )
-                          ),
+                                  onPressed: () => Navigator.pop(context), icon: const Icon(
+                                  Icons.arrow_back))),
                           const Expanded(
                             flex: 5,
                             child: Text(
@@ -54,7 +54,11 @@ class TestsDescriptionPage extends StatelessWidget {
                       const SizedBox(
                         height: 8.0,
                       ),
-                      CustomButton(MyStrings.moveToTestText, () => null)
+                      CustomButton(
+                          MyStrings.moveToTestText,
+                              () =>
+                              Navigator.push(
+                                  context, MaterialPageRoute(builder: (context) => const TestPage())))
                     ],
                   ),
                 ],
