@@ -43,4 +43,11 @@ class MyStyles extends TextStyle {
       color: MyColors.textColor,
       letterSpacing: 1.6,
       fontFamily: 'PoiretOne');
+
+  static const ts_FS32_CDavyc_Grey_lS17_FFNumbers = TextStyle(
+      fontSize: 32.0,
+      color: MyColors.davysGreyColor,
+      letterSpacing: 1.7,
+      fontFamily: 'Numbers'
+  );
 }

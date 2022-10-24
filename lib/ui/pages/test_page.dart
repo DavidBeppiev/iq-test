@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iq_tests/bloc/tests%20cubit/test_cubit.dart';
 import 'package:iq_tests/bloc/timer%20cubit/timer_cubit.dart';
+import 'package:iq_tests/data/constants/styles.dart';
 import 'package:iq_tests/data/models/tests_model.dart';
+import 'package:iq_tests/ui/views/test_view.dart';
 
 class TestPage extends StatefulWidget {
   const TestPage({Key? key}) : super(key: key);
@@ -47,15 +49,22 @@ class _TestPageState extends State<TestPage> {
                   String strDigits(int n) => n.toString().padLeft(2, '0');
                   final minutes = strDigits(timeState.duration!.inMinutes.remainder(60));
                   final seconds = strDigits(timeState.duration!.inSeconds.remainder(60));
-                  return Row(
-                    children: [
-                      const Text('time: '),
-                      Text('$minutes:$seconds'),
-                    ],
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 14.0),
+                    child: Text(
+                      '$minutes:$seconds',
+                      style: MyStyles.ts_FS32_CDavyc_Grey_lS17_FFNumbers,
+                    ),
                   );
                 }
                 return const SizedBox();
               },
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Divider(
+                thickness: 1.8,
+              ),
             ),
             BlocConsumer<TestCubit, TestState>(listener: (context, testsState) {
               // TODO: implement listener
@@ -72,7 +81,7 @@ class _TestPageState extends State<TestPage> {
                       },
                       itemCount: questions.length,
                       itemBuilder: (context, i) {
-                        return Center(child: Text(questions[i].question!));
+                        return TestView(questions[i]);
                       }),
                 );
               }

@@ -36,5 +36,8 @@ flutter:
     - family: Qwitcher
       fonts:
         - asset: assets/fonts/QwitcherGrypen-Regular.ttf
+    - family: Numbers
+      fonts:
+        - asset: assets/fonts/VarelaRound-Regular.ttf
 
 
