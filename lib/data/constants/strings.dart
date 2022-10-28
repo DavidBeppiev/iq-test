@@ -17,4 +17,12 @@ class MyStrings {
   static const String testDescriptionText2 = '*Тест представляет из себя 40 вопросов, на которые '
       'необходимо ответить за 30 минут. ';
   static const String moveToTestText = 'Перейти к тесту';
+
+  /// = = = Alerts = = =
+  static const String backToDescriptionText = 'Назад к описанию';
+  static const String warningAlertText =
+      'Предупреждение по дефолту: Все не сохранённые данные будут потеряны(';
+
+  // = = = TestPage = = =
+  static const String answerText = 'Ответ';
 }

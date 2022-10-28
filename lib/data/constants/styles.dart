@@ -50,4 +50,11 @@ class MyStyles extends TextStyle {
       letterSpacing: 1.7,
       fontFamily: 'Numbers'
   );
+
+  static const ts_FS25_CDavyc_Grey_lS17_FFNumbers = TextStyle(
+      fontSize: 25.0,
+      color: MyColors.davysGreyColor,
+      letterSpacing: 1.7,
+      fontFamily: 'Numbers'
+  );
 }

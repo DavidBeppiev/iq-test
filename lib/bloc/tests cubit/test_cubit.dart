@@ -8,12 +8,12 @@ import 'package:meta/meta.dart';
 part 'test_state.dart';
 
 class TestCubit extends Cubit<TestState> {
-  TestCubit() : super(TestLoading());
+  TestCubit() : super(TestsLoading());
 
   void loadTests() async {
     String data = await rootBundle.loadString("assets/tests/questions.json");
     TestsModel tests = TestsModel.fromJson(jsonDecode(data));
-    emit(TestLoaded(tests: tests));
+    emit(TestsLoaded(tests: tests));
   }
 
 }

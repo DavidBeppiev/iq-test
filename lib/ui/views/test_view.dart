@@ -19,20 +19,22 @@ class TestView extends StatelessWidget {
             style: MyStyles.ts_FS25_FWbold_CText_LS1_FFPoiretOne,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 100,),
+          // const SizedBox(height: 100,),
           questions.explanation!.explanationText!.isEmpty
-              ? Image.network(questions.explanation!.imagePath!)
-              : SizedBox(
-            height: 300.0,
-                child: ListView.builder(
+              ? Expanded(child: Center(child: Image.network(questions.explanation!.imagePath!)))
+              : Expanded(
+                child: Center(
+                  child: ListView.builder(
+                    shrinkWrap: true,
             itemCount: questions.explanation!.explanationText!.length,
-                  itemBuilder: (context, i) {
-                    return Text(
-                      questions.explanation!.explanationText![i],
-                      style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
-                      textAlign: TextAlign.center,
-                    );
-                  }
+                    itemBuilder: (context, i) {
+                      return Text(
+                        questions.explanation!.explanationText![i],
+                        style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
+                        textAlign: TextAlign.center,
+                      );
+                    }
+                  ),
                 ),
               ),
         ],

@@ -56,7 +56,9 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              CustomButton(
+              customButton(
+                double.infinity,
+                  60.0,
                   MyStrings.nextText,
                   () => Navigator.push(
                       context, MaterialPageRoute(builder: (context) => const TestsDescriptionPage()))),

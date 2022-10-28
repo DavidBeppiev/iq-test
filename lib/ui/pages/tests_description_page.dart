@@ -54,7 +54,9 @@ class TestsDescriptionPage extends StatelessWidget {
                       const SizedBox(
                         height: 8.0,
                       ),
-                      CustomButton(
+                      customButton(
+                        double.infinity,
+                          58.0,
                           MyStrings.moveToTestText,
                               () =>
                               Navigator.push(
