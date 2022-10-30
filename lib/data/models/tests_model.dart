@@ -55,8 +55,9 @@ class Questions {
   String? question;
   Explanation? explanation;
   String? answer;
+  String? userAnswer;
 
-  Questions({this.id, this.question, this.explanation, this.answer});
+  Questions({this.id, this.question, this.explanation, this.answer, this.userAnswer});
 
   Questions.fromJson(Map<String, dynamic> json) {
     id = json['id'];

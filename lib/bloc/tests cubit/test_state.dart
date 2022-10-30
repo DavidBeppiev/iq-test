@@ -9,3 +9,9 @@ class TestsLoaded extends TestState {
   TestsModel tests;
   TestsLoaded({required this.tests});
 }
+
+class TestsResult extends TestState {
+  int countRight;
+  int countWrong;
+  TestsResult({required this.countRight, required this.countWrong});
+}

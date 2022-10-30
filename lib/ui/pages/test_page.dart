@@ -7,6 +7,7 @@ import 'package:iq_tests/data/constants/colors.dart';
 import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
 import 'package:iq_tests/data/models/tests_model.dart';
+import 'package:iq_tests/ui/pages/test_result_page.dart';
 import 'package:iq_tests/ui/views/test_view.dart';
 import 'package:iq_tests/ui/widgets/alerts/abort_test_alert.dart';
 
@@ -27,11 +28,9 @@ class _TestPageState extends State<TestPage> {
 
   TextEditingController _answerController = TextEditingController();
 
-  final OutlineInputBorder _outLineBorder =  const OutlineInputBorder(
+  final OutlineInputBorder _outLineBorder = const OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(15.0)),
-    borderSide: BorderSide(
-        color: MyColors.davysGreyColor
-    ),
+    borderSide: BorderSide(color: MyColors.davysGreyColor),
   );
 
   final Cubic _curves = Curves.easeInSine;
@@ -104,7 +103,13 @@ class _TestPageState extends State<TestPage> {
                 ),
               ),
               BlocConsumer<TestCubit, TestState>(listener: (context, testsState) {
-                // TODO: implement listener
+                if (testsState is TestsResult) {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TestsResultPage(
+                              countRight: testsState.countRight, countWrong: testsState.countWrong)));
+                }
               }, builder: (context, testsState) {
                 if (testsState is TestsLoaded) {
                   questions = testsState.tests.data![0].questions!;
@@ -129,18 +134,17 @@ class _TestPageState extends State<TestPage> {
                   children: [
                     Expanded(
                         child: TextFormField(
-                          decoration: InputDecoration(
-                            contentPadding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 10.0),
-                            hintText: MyStrings.answerText,
-                            enabledBorder:  _outLineBorder,
-                            focusedBorder: _outLineBorder
-                          ),
-                          cursorColor: MyColors.textColor,
+                      decoration: InputDecoration(
+                          contentPadding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 10.0),
+                          hintText: MyStrings.answerText,
+                          enabledBorder: _outLineBorder,
+                          focusedBorder: _outLineBorder),
+                      cursorColor: MyColors.textColor,
                       controller: _answerController,
                       style: MyStyles.ts_FS25_FWbold_CText_LS1_FFPoiretOne,
                     )),
                     IconButton(
-                        onPressed: () => _nextPage(),
+                        onPressed: () => _nextPage(_answerController.text),
                         splashRadius: 25.0,
                         icon: const Icon(
                           Icons.arrow_forward_ios,
@@ -156,9 +160,14 @@ class _TestPageState extends State<TestPage> {
     );
   }
 
-  void _nextPage() {
-    if (pageController.page != questions.length) {
+  void _nextPage(String _answer) {
+    if (pageController.page! + 1 != questions.length) {
+      _answer = _answer.toLowerCase().replaceAll(' ', '');
+      BlocProvider.of<TestCubit>(context).userAnswer(_answer, pageController.page!.toInt());
+      _answerController.clear();
       pageController.nextPage(duration: transitionBetweenTests, curve: _curves);
+    } else {
+      BlocProvider.of<TestCubit>(context).calculateResult();
     }
   }
 
