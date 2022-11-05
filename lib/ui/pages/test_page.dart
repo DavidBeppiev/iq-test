@@ -108,7 +108,12 @@ class _TestPageState extends State<TestPage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) => TestsResultPage(
-                              countRight: testsState.countRight, countWrong: testsState.countWrong)));
+                                countRight: testsState.countRight,
+                                countWrong: testsState.countWrong,
+                                result: testsState.result,
+                                testMeaningColor: testsState.testMeaningColor,
+                                testMeaningText: testsState.testMeaningText,
+                              )));
                 }
               }, builder: (context, testsState) {
                 if (testsState is TestsLoaded) {

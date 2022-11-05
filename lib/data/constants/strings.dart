@@ -25,4 +25,12 @@ class MyStrings {
 
   // = = = TestPage = = =
   static const String answerText = 'Ответ';
+
+  // = = = Result Text Strings
+  static const String veryLow = 'Всё очень плохо(';
+  static const String quiteLow = 'Ниже среднего';
+  static const String middle = 'Средний';
+  static const String good = 'Выше среднего';
+  static const String high = 'Высокий';
+  static const String veryHigh = 'Очень высокий';
 }
