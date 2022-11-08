@@ -137,7 +137,7 @@ class _TestPageState extends State<TestPage> {
                 return const SizedBox();
               }),
               Padding(
-                padding: const EdgeInsets.only(top: 5.0, right: 20.0, bottom: 10.0, left: 20.0),
+                padding: const EdgeInsets.only(top: 5.0, right: 10.0, bottom: 25.0, left: 20.0),
                 child: Row(
                   children: [
                     Expanded(
@@ -170,6 +170,7 @@ class _TestPageState extends State<TestPage> {
 
   void _nextPage(String answer) {
     if (pageController.page! + 1 != questions.length) {
+      FocusScope.of(context).unfocus();
       answer = answer.toLowerCase().replaceAll(' ', '');
       BlocProvider.of<TestCubit>(context).userAnswer(answer, pageController.page!.toInt());
       _answerController.clear();

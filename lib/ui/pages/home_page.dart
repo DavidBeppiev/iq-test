@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iq_tests/data/constants/colors.dart';
 import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
 import 'package:iq_tests/ui/pages/tests_description_page.dart';
@@ -34,7 +33,7 @@ class HomePage extends StatelessWidget {
               ),
               customButton(
                 double.infinity,
-                  60.0,
+                  MediaQuery.of(context).size.height * 0.070,
                   MyStrings.nextText,
                   () => Navigator.push(
                       context, MaterialPageRoute(builder: (context) => const TestsDescriptionPage()))),
