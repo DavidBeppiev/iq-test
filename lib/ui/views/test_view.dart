@@ -17,7 +17,7 @@ class TestView extends StatelessWidget {
           children: [
             Text(
               questions.question!,
-              style: MyStyles.ts_FS25_FWbold_CText_LS1_FFPoiretOne,
+              style: MyStyles.ts_FS22_FWbold_CText_LS1_FFPoiretOne,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30.0,),
@@ -32,7 +32,7 @@ class TestView extends StatelessWidget {
                     itemBuilder: (context, i) {
                       return Text(
                         questions.explanation!.explanationText![i],
-                        style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
+                        style: MyStyles.ts_FS30_FWbold_CText_LS7_FFPoiretOne,
                         textAlign: TextAlign.center,
                       );
                     }

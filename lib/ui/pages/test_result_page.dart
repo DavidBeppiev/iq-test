@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iq_tests/data/constants/colors.dart';
 import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
 import 'package:iq_tests/ui/pages/home_page.dart';
@@ -37,14 +36,14 @@ class TestsResultPage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 25.0),
                 child: myLogoWidget(),
               ),
-              const SizedBox(
-                height: 25.0,
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.010,
               ),
               Text(
                 '${MyStrings.resultTestText} $result ${MyStrings.logoName1.toUpperCase()}',
                 style: MyStyles.ts_FS20_FWbold_CText_LS1_FFPoiretOne,
               ),
-              const SizedBox(height: 7.0,),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.007,),
               Center(
                 child: Text(
                   testMeaningText,

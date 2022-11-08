@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iq_tests/data/constants/colors.dart';
 
 class MyStyles extends TextStyle {
-  static const ts_FS35_FWbold_CText_LS7_FFPoiretOne = TextStyle(
-      fontSize: 35.0,
+  static const ts_FS30_FWbold_CText_LS7_FFPoiretOne = TextStyle(
+      fontSize: 30.0,
       letterSpacing: 7.3,
       fontWeight: FontWeight.bold,
       color: MyColors.textColor,
@@ -37,8 +37,8 @@ class MyStyles extends TextStyle {
       letterSpacing: 1.6,
       fontFamily: 'PoiretOne');
 
-  static const ts_FS25_FWbold_CText_LS1_FFPoiretOne = TextStyle(
-      fontSize: 25.0,
+  static const ts_FS22_FWbold_CText_LS1_FFPoiretOne = TextStyle(
+      fontSize: 22.0,
       fontWeight: FontWeight.bold,
       color: MyColors.textColor,
       letterSpacing: 1.6,

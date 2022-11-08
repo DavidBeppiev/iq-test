@@ -149,7 +149,7 @@ class _TestPageState extends State<TestPage> {
                           focusedBorder: _outLineBorder),
                       cursorColor: MyColors.textColor,
                       controller: _answerController,
-                      style: MyStyles.ts_FS25_FWbold_CText_LS1_FFPoiretOne,
+                      style: MyStyles.ts_FS22_FWbold_CText_LS1_FFPoiretOne,
                     )),
                     IconButton(
                         onPressed: () => _nextPage(_answerController.text),

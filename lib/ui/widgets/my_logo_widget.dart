@@ -8,7 +8,7 @@ Widget myLogoWidget () {
     children: [
       Image.asset(
         'assets/images/pi_logo.png',
-        width: 100.0,
+        width: 70.0,
         color: MyColors.textColor,
       ),
       Row(
@@ -16,7 +16,7 @@ Widget myLogoWidget () {
         children: [
           Text(
             MyStrings.logoName1.toUpperCase(),
-            style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
+            style: MyStyles.ts_FS30_FWbold_CText_LS7_FFPoiretOne,
           ),
           const SizedBox(
             width: 20.0,

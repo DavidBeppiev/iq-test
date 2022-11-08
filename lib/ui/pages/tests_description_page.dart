@@ -28,19 +28,19 @@ class TestsDescriptionPage extends StatelessWidget {
                         flex: 5,
                         child: Text(
                           MyStrings.testTitle,
-                          style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
+                          style: MyStyles.ts_FS30_FWbold_CText_LS7_FFPoiretOne,
                           textAlign: TextAlign.center,
                         ),
                       ),
                       const Expanded(child: SizedBox()),
                     ],
                   ),
-                  const SizedBox(
-                    height: 50.0,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.040,
                   ),
                   const Text(
                     MyStrings.testDescriptionText1,
-                    style: MyStyles.ts_FS25_FWbold_CText_LS1_FFPoiretOne,
+                    style: MyStyles.ts_FS22_FWbold_CText_LS1_FFPoiretOne,
                   ),
                 ],
               ),
@@ -55,7 +55,7 @@ class TestsDescriptionPage extends StatelessWidget {
                   ),
                   customButton(
                       double.infinity,
-                      MediaQuery.of(context).size.height * 0.060,
+                      MediaQuery.of(context).size.height * 0.090,
                       MyStrings.moveToTestText,
                       () =>
                           Navigator.push(context, MaterialPageRoute(builder: (context) => const TestPage())))
