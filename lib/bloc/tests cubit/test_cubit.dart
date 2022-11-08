@@ -35,8 +35,11 @@ class TestCubit extends Cubit<TestState> {
   void calculateResult() {
     emit(TestsLoading());
     for (int i = 0; i < tests.data![0].questions!.length; i++) {
-      if (tests.data![0].questions![i].userAnswer == tests.data![0].questions![i].answer) countRight++;
-      else countWrong++;
+      if (tests.data![0].questions![i].userAnswer == tests.data![0].questions![i].answer) {
+        countRight++;
+      } else {
+        countWrong++;
+      }
     }
 
     iqResult = countRight * 100 ~/ 15;
@@ -53,23 +56,23 @@ class TestCubit extends Cubit<TestState> {
 
   void meaningFun() {
     if (iqResult <= 69) {
-      testMeaningText = testMeaning.resultText![0];
-      testMeaningColor = testMeaning.resultColors![0];
+      testMeaningText = testMeaning.resultText[0];
+      testMeaningColor = testMeaning.resultColors[0];
     } else if (iqResult >= 70 && iqResult <= 79) {
-      testMeaningText = testMeaning.resultText![1];
-      testMeaningColor = testMeaning.resultColors![1];
+      testMeaningText = testMeaning.resultText[1];
+      testMeaningColor = testMeaning.resultColors[1];
     } else if (iqResult >= 80 && iqResult <= 99) {
-      testMeaningText = testMeaning.resultText![2];
-      testMeaningColor = testMeaning.resultColors![2];
+      testMeaningText = testMeaning.resultText[2];
+      testMeaningColor = testMeaning.resultColors[2];
     } else if (iqResult >= 100 && iqResult <= 114) {
-      testMeaningText = testMeaning.resultText![3];
-      testMeaningColor = testMeaning.resultColors![3];
+      testMeaningText = testMeaning.resultText[3];
+      testMeaningColor = testMeaning.resultColors[3];
     } else if (iqResult >= 115 && iqResult <= 130) {
-      testMeaningText = testMeaning.resultText![4];
-      testMeaningColor = testMeaning.resultColors![3];
+      testMeaningText = testMeaning.resultText[4];
+      testMeaningColor = testMeaning.resultColors[3];
     } else {
-      testMeaningText = testMeaning.resultText![5];
-      testMeaningColor = testMeaning.resultColors![3];
+      testMeaningText = testMeaning.resultText[5];
+      testMeaningColor = testMeaning.resultColors[3];
     }
   }
 }

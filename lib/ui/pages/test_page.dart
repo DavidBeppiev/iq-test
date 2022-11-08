@@ -54,7 +54,10 @@ class _TestPageState extends State<TestPage> {
             children: [
               BlocConsumer<TimerCubit, TimerState>(
                 listener: (context, timeState) {
-                  // TODO: implement listener
+                  if (timeState is TimerFinish) {
+                    BlocProvider.of<TimerCubit>(context).resetTimer();
+                    BlocProvider.of<TestCubit>(context).calculateResult();
+                  }
                 },
                 builder: (context, timeState) {
                   if (timeState is TimerInitial) {
@@ -165,13 +168,14 @@ class _TestPageState extends State<TestPage> {
     );
   }
 
-  void _nextPage(String _answer) {
+  void _nextPage(String answer) {
     if (pageController.page! + 1 != questions.length) {
-      _answer = _answer.toLowerCase().replaceAll(' ', '');
-      BlocProvider.of<TestCubit>(context).userAnswer(_answer, pageController.page!.toInt());
+      answer = answer.toLowerCase().replaceAll(' ', '');
+      BlocProvider.of<TestCubit>(context).userAnswer(answer, pageController.page!.toInt());
       _answerController.clear();
       pageController.nextPage(duration: transitionBetweenTests, curve: _curves);
     } else {
+      BlocProvider.of<TimerCubit>(context).resetTimer();
       BlocProvider.of<TestCubit>(context).calculateResult();
     }
   }

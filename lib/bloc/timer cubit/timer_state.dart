@@ -7,3 +7,5 @@ class TimerInitial extends TimerState {
   Duration? duration;
   TimerInitial({this.duration});
 }
+
+class TimerFinish extends TimerState {}
