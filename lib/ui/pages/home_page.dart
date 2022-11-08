@@ -4,6 +4,7 @@ import 'package:iq_tests/data/constants/strings.dart';
 import 'package:iq_tests/data/constants/styles.dart';
 import 'package:iq_tests/ui/pages/tests_description_page.dart';
 import 'package:iq_tests/ui/widgets/custom_button.dart';
+import 'package:iq_tests/ui/widgets/my_logo_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,32 +19,7 @@ class HomePage extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 25.0),
-                child: Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/pi_logo.png',
-                      width: 100.0,
-                      color: MyColors.textColor,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          MyStrings.logoName1.toUpperCase(),
-                          style: MyStyles.ts_FS35_FWbold_CText_LS7_FFPoiretOne,
-                        ),
-                        const SizedBox(
-                          width: 20.0,
-                        ),
-                        const Text(
-                          MyStrings.logoName2,
-                          style: MyStyles.ts_FS35_FWbold_CText_LS20_FFPoiretOne,
-                          textAlign: TextAlign.right,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+                child: myLogoWidget(),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 50.0),
