@@ -1,7 +1,7 @@
 class MyStrings {
   ///  = = = IinitialPageStrings = = =
   static const String logoName1 = 'Iq';
-  static const String logoName2 = 'Tests';
+  static const String logoName2 = 'Test';
 
   static const String descriptionText =
       'У каждого человека есть свой уровень интеллекта. Мы все примерно представляем, что мы можем, а чего не можем. Но как этот уровень измерить? Для этого нужно пройти тест IQ. В результаты вы получите свой балл, который покажет ваш уровень интеллекта или уровень IQ.';

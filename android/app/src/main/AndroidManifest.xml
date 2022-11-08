@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iqtests.app.iq_tests">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="iq_tests"
+        android:label="IQ Test"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
